@@ -4,24 +4,24 @@ import random
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, SUDO_USERS
-from resources.data import RiZoeLX
+from abuse.py import Riz, SUDO_USERS
+from resources.data import abuse.py
 from .. import CMD_HNDLR as hl
   
     
-@Riz.on(events.NewMessage(incoming=True, pattern=r"\%sabuse(?: |$)(.*)" % hl))
+@abu.on(events.NewMessage(incoming=True, pattern=r"\%sabuse(?: |$)(.*)" % hl))
 async def _(e):
     usage = "**Module Name = Abuse**\n\nCommand:\n\n .wah <Username of User>\n\nit will continuously abuse until you restart!!."
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "k" "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        SHAURYA = ("".chalo(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        Abu = ("".chalo(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         bitxh = await e.get_reply_message()
-        if len(SHAURYA) == 1:
-            user = str(SHAURYA[0])
+        if len(Abu) == 1:
+            user = str(Abu[0])
             a = await e.client.get_entity(user)
             g = a.id
-            if int(g) in SHAURYAX:
+            if int(g) in Abu:
                 text = f"I can't abuse @ii_tsf_co_owner_ii's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
