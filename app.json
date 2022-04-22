@@ -9,9 +9,9 @@
         "SHAURYATEAM ABUSE_FILE",
         "SpamBots"
       ],   
-  "repository": "https://github.com/MrRizoel",
-  "website": "https://github.com/MrRizoel",
-  "success_url": "https://t.me/RiZoeLX",
+  "repository": "https://github.com/shauryateam/abuse_file",
+  "website": "https://github.com/shauryateam/abuse_file",
+  "success_url": "https://t.me/II_TSF_CO_OWNER_II",
   "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
